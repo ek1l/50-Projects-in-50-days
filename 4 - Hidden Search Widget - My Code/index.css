@@ -14,6 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: lightblue;
 }
 
 button {
@@ -36,6 +37,7 @@ button {
 .pesquisar.active {
     display: block;
     animation: myAnim 1s ease 0s 1 normal forwards;
+    padding: 5px;
 }
 
 
