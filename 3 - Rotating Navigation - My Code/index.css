@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: gray;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.title {
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.texto {
+    width: 40%;
+    color: white;
+}
+
+
+.cachorro {
+    margin-top: 30px;
+}
+
+.cachorro img {
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+
+.cachorro img:hover {
+    border-radius: 25px;
+}
+
+
+.menu {
+    width: 224px;
+    height: 200px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 30% 70% 100% 0% / 0% 0% 90% 90%;
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+}
+
+
+#abrirmenu {
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: gray;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+#abrirmenu:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+
+.container {
+    display: flex;
+
+}
+
+.sumir {
+    display: none;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.sumir.active {
+    display: block;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.menuabriu {
+    background-color: rgb(32, 32, 32);
+    height: 100vh;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    border-top-right-radius: 100%;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+    position: absolute;
+}
+
+.menuabriu ul {
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.menuabriu ul li a {
+    color: white;
+    font-size: 25px;
+    transition: 0.4s ease;
+}
+
+.menuabriu ul li a:hover {
+    color: rgb(139, 136, 136);
+}
