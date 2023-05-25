@@ -1,6 +1,5 @@
 const insertHTML = document.querySelector(".insert");
 window.addEventListener("keydown", (e) => {
-  console.log(e);
   insertHTML.innerHTML = `
 
     <div class='key'>
@@ -17,6 +16,6 @@ window.addEventListener("keydown", (e) => {
         <h1> Key.Code</h1>
         <small>    ${e.code} </small> 
     </div>
-    
+
   `;
 });
