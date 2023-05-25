@@ -12,7 +12,7 @@ const data = async () => {
     const { attachments } = await fetchAPI();
     return attachments[0].text;
 };
-
 getJoker.addEventListener("click", async () => {
   innerJoker.innerText = await data();
 });
+
