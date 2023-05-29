@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(4, 130, 248);
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.garrafa {
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px;
+    border: 2px solid rgb(0, 89, 255);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ml {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px;
+    background-color: #fff;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; 
+    border: 2px solid rgb(0, 89, 255);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.ml:hover {
+    background-color: rgb(0, 46, 133);
+    color: white;
+}
+
+.ml.active {
+background-color: rgb(2, 21, 58);
+color: white;
+}
+
+.aguas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
