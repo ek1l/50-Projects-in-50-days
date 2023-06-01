@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -8,22 +8,63 @@
 
 
 body {
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     max-height: 100vh;
-    background-color: lightskyblue ;
+    background-color: lightskyblue;
+    margin: 0 auto;
 }
- 
+
 
 img {
     width: 500px;
     height: 300px;
     background-size: cover;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+img:hover {
+    opacity: 0.9;
 }
 
 
+.container-fotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 3.75rem;
+    position: relative;
+    top: 300px;
+    outline: 3px solid black;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+}
+
+button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    transition: 0.3s;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: lightblue;
+}
 
 
-
-
+.fotos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+    width: 2000px;
+}
