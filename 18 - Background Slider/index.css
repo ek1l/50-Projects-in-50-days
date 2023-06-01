@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    background-color: lightskyblue ;
+}
+ 
+
+img {
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+}
+
+
+
+
+
+
