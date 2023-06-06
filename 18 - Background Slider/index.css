@@ -1,70 +1,91 @@
 * {
-    padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
+    padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
-
 
 body {
-    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-height: 100vh;
-    background-color: lightskyblue;
-    margin: 0 auto;
-}
-
-
-img {
-    width: 500px;
-    height: 300px;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-position: center center;
     background-size: cover;
     transition: 0.4s;
-    border-radius: 5px;
 }
 
-img:hover {
-    opacity: 0.9;
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
 }
 
 
-.container-fotos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    gap: 3.75rem;
+.slider-container {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    height: 70vh;
+    width: 70vw;
     position: relative;
-    top: 300px;
-    outline: 3px solid black;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
-}
-
-button {
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    font-weight: bold;
-    background-color: transparent;
-    border: none;
-    transition: 0.3s;
-    font-size: 30px;
-    border-radius: 20px;
-}
-
-button:hover {
-    background-color: lightblue;
-}
-
-
-.fotos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
     overflow: hidden;
-    width: 2000px;
+}
+
+
+.slide {
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: -15vh;
+    left: -15vw;
+    transition: 0.4s ease;
+    z-index: 1;
+}
+
+
+.slide.active {
+    opacity: 1;
+}
+
+
+.arrow {
+    position: fixed;
+    background-color: transparent;
+    padding: 20px;
+    font-size: 30px;
+    border: 2px solid white;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.arrow:hover {
+    background-color: rgba(255, 255, 255, 0.171);
+}
+
+.arrow:focus {
+    outline: 0;
+}
+
+.left-arrow {
+    left: calc(15vw - 65px);
+}
+
+
+.right-arrow {
+right: calc(15vw - 65px);
 }
