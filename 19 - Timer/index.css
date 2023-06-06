@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    width: 150px;
+    height: 50px;
+}
+
+button.active {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    width: 150px;
+    height: 50px;
+}
+
+body.active {
+    background-color: black;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.relogio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.relogio.active {
+    color: white;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
